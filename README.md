@@ -1,4 +1,5 @@
-### Key Sections Breakdown:
+### About:
+- **Abstract**:The Wheatstone bridge experiment is a fundamental component of the undergraduate physics curriculum, traditionally taught as a hands-on activity to explore resistance measurement and circuit balancing. This study introduces a pedagogical approach that combines a symmetry-based qualitative analysis with quantitative computer-based sensitivity simulations, enhancing stu-dents' understanding and engagement. A key focus is demonstrating how balanced configura-tions in the Wheatstone bridge affect circuit sensitivity, providing students with an intuitive grasp of the relationship between symmetry and measurement accuracy. Using simulations, we inves-tigate the impact of internal resistances in the galvanometer and power supply, showing that lower resistances increase the circuit's sensitivity to minor resistance changes. Additionally, various resistor configurations are analyzed, highlighting the effect of careful adjustments in achieving maximal sensitivity. A Bayesian optimization-based software tool was developed to guide students in selecting optimal component values, minimizing the need for manual adjust-ments while ensuring accurate measurements. 
 ### Key Sections Breakdown:
 
 - **Project Name**: Wheatstone Bridge Sensitivity Optimization.
