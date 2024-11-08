@@ -54,8 +54,8 @@ def search_around_best_values(Rx, Rb, rg, E, update_progress, n):
     
     best_R2, best_R3 = result.x
     max_sensitivity = -result.fun
-    best_values = [Rx, round(best_R2, 2), round(best_R3, 2), 
-                   round(Rx * best_R3 / best_R2, 2), round(max_sensitivity, 8), 
+    best_values = [Rx, round(best_R2, 1), round(best_R3, 1), 
+                   round(Rx * best_R3 / best_R2, 1), round(max_sensitivity, 8), 
                    round(best_R2 / best_R3, 2)]
     return best_values
 
@@ -76,7 +76,7 @@ root.grid_columnconfigure(1, weight=1)
 root.grid_columnconfigure(2, weight=1)
 
 # Create label controls
-labels = ["E (V):", "Rb (Ω):", "rg (Ω):", "Rx (Ω):"]
+labels = ["E (V):", "rb (Ω):", "rg (Ω):", "Rx (Ω):"]
 for i, text in enumerate(labels):
     label = tk.Label(root, text=text, font=("Times New Roman", 14), fg="blue")
     label.grid(row=i, column=0, padx=10, pady=3, sticky='e')
@@ -109,9 +109,9 @@ def update_gui():
         best_values = progress_queue.get_nowait()
         result_label.config(
             text=(
-                f"                     Best R2:     {best_values[1]:10.2f}Ω\n"
-                f"                     Best R3:      {best_values[2]:10.2f}Ω\n"
-                f"               Approx. R4:      {best_values[3]:10.2f}Ω\n"
+                f"                     Best R2:     {best_values[1]:10.1f}Ω\n"
+                f"                     Best R3:      {best_values[2]:10.1f}Ω\n"
+                f"               Approx. R4:      {best_values[3]:10.1f}Ω\n"
                 f"                 Sensitivity:       {best_values[4]:10.2e}\n"
                 f"                       R2/R3:        {best_values[5]:10.2f}"
             ),
