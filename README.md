@@ -1,11 +1,26 @@
-### About:
-- **Abstract**:The Wheatstone bridge experiment is a fundamental component of the undergraduate physics curriculum, traditionally taught as a hands-on activity to explore resistance measurement and circuit balancing. This study introduces a pedagogical approach that combines a symmetry-based qualitative analysis with quantitative computer-based sensitivity simulations, enhancing stu-dents' understanding and engagement. A key focus is demonstrating how balanced configura-tions in the Wheatstone bridge affect circuit sensitivity, providing students with an intuitive grasp of the relationship between symmetry and measurement accuracy. Using simulations, we inves-tigate the impact of internal resistances in the galvanometer and power supply, showing that lower resistances increase the circuit's sensitivity to minor resistance changes. Additionally, various resistor configurations are analyzed, highlighting the effect of careful adjustments in achieving maximal sensitivity. A Bayesian optimization-based software tool was developed to guide students in selecting optimal component values, minimizing the need for manual adjust-ments while ensuring accurate measurements. 
-### Key Sections Breakdown:
+# **WBOpt** : Optimizing the sensitivity of the Wheatstone bridge
 
-- **Project Name**: Wheatstone Bridge Sensitivity Optimization.
-- **Table of Contents**: WBOpt.exe,WBOpt.py,WBOpt.jpg.
-- **Installation**: python3.8.
-- **Usage**:The number of Bayesian iterations can be adjusted, which will seriously affect the running time and accuracy of the results.
+<img src="https://github.com/user-attachments/assets/eaa3a303-1f9d-4f73-b5fd-874456014dff" width = "640" height = "480" alt="" align=center />
+
+---
+### About:
+The Wheatstone bridge experiment is a fundamental component of the undergraduate physics curriculum, traditionally taught as a hands-on activity to explore resistance measurement and circuit balancing. 
+
+In an undergraduate physics experiment, high sensitivity is critical for helping students observe and understand subtle variations in electrical resistance, providing a deeper insight into measurement accuracy and precision. 
+Students gain practical circuit design and optimization skills by learning to adjust the circuit parameters to maximize sensitivity, bridging theoretical concepts with hands-on experimentation. 
+
+However, conventional experimental setups may limit students' ability to explore the full range of parameters affecting bridge sensitivity. 
+Manually adjusting each component in the bridge to optimize sensitivity can be timeconsuming, error-prone, and may not always lead to optimal values.
+
+One software named WBOpt was developed using Bayesian optimization principles, allowing students to automatically determine the bridge configuration for maximum sensitivity and familiarizing them with modern physics and engineering practices, where simulation and optimization are essential.
+
+### User Guides:
+
+- **Enviroment**: Python3.8 (not needed for exe running).
+- **Usage**: Input key factors of circuit, then press the "Optimize!" button.
+
+### Citation
+- If you find the WBOpt software useful, we strongly suggest that you cite this work (doi: xxx).
   
 ## License
 
@@ -24,6 +39,3 @@ This project is licensed under the terms of the **Apache License 2.0**, which is
 4. **Disclaimer**: The project is provided "as is", without warranty of any kind.
 
 For a full text of the license, please refer to the [LICENSE](LICENSE) file in the repository.
-
-### Documentation
-Documentation is hosted on: 
